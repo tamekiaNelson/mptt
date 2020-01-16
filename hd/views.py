@@ -1,6 +1,6 @@
-from hd.models import Genre
+from hd.models import File
 from django.shortcuts import render
 
 
-def show_genres(request):
-    return render(request, "index.html", {'genres': Genre.objects.all()})
+def show_files(request):
+    return render(request, "index.html", {'files': File.objects.all()})

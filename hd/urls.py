@@ -16,12 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from hd import views
-from hd.models import Genre
+# from hd.models import File
 
-
-admin.site.register(Genre)
+# admin.site.register(File)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.show_genres),
+    path('', views.show_files),
 ]
